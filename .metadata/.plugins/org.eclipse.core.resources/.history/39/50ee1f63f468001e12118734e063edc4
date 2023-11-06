@@ -1,0 +1,17 @@
+package com.jsp.servlet.student.dto;
+
+import java.time.LocalDate;
+
+public class Employee {
+
+	private int Id;
+	private String Name;
+	private String Email;
+	private LocalDate DOB;
+	private int age;
+	private String salary;
+	private String Status;
+	
+	
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.jsp.hbernate_many_to_one_uni.dao.Teacherdao&apos; to &apos;TeacherDao&apos;&#x0D;&#x0A;- Original project: &apos;many-to-one-uni&apos;&#x0D;&#x0A;- Original element: &apos;com.jsp.hbernate_many_to_one_uni.dao.Teacherdao&apos;&#x0D;&#x0A;- Renamed element: &apos;com.jsp.hbernate_many_to_one_uni.dao.TeacherDao&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Teacherdao&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.jsp.hbernate_many_to_one_uni.dao{Teacherdao.java[Teacherdao" matchStrategy="1" name="TeacherDao" qualified="false" references="true" similarDeclarations="false" stamp="1697445605745" textual="false" version="1.0"/>
+</session>

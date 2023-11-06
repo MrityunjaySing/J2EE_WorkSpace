@@ -1,0 +1,10 @@
+package com.jpql_crud_operation.service;
+
+import com.jpql_crud_operation.dto.Product;
+
+public class ProductService {
+	public Product getProductByIdDao(int productId) {
+		return null;
+		
+}
+}

@@ -1,0 +1,5 @@
+package com.jpql_crud_operation.dto;
+
+public class Product {
+
+}

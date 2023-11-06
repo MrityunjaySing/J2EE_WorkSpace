@@ -1,0 +1,14 @@
+package com.jpql_crud_operation.controller;
+
+import com.jpql_crud_operation.dao.ProductDao;
+import com.jpql_crud_operation.dto.Product;
+import com.jpql_crud_operation.service.ProductService;
+
+public class ProductInsertController {
+public static void main(String[] args) {
+	ProductDao dao = new ProductDao();
+	Product product = new Product(101, "orange", 100, "yellow" );
+	ProductService  service = new ProductService();
+	dao.saveProductDao(product);
+}
+}

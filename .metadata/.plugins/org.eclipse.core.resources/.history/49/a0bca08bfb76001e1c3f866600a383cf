@@ -1,0 +1,17 @@
+package com.jpql_crud_operation.controller;
+
+import com.jpql_crud_operation.dao.ProductDao;
+import com.jpql_crud_operation.dto.Product;
+
+public class ProductInsertController {
+public static void main(String[] args) {
+	
+	Product product = new  ProductDao().getProductByIdDao(123);
+	if(product!=null) {
+		System.out.println("id = "+product.getId());
+		System.out.println("name = "+product.getName());
+		System.out.println("price = "+product.getPrice());
+		System.out.println("color = "+product.getColor());
+	}
+}
+}

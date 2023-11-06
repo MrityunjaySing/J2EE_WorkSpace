@@ -1,0 +1,10 @@
+package com.jpql_crud_operation.controller;
+
+import com.jpql_crud_operation.dto.Product;
+
+public class ProductInsertController {
+public static void main(String[] args) {
+	Product product = new Product(101, "orange", 100, "yellow" );
+	
+}
+}

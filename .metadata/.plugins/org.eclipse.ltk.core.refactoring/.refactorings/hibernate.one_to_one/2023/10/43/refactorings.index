@@ -1,0 +1,5 @@
+1698392886935	Move 'META-INF' to 'resources'
+1698393851810	Rename type 'Student'
+1698395545186	Rename type 'Employee'
+1698395715832	Rename type 'Address'
+1698399357943	Rename type 'QuestionAnswerDao'

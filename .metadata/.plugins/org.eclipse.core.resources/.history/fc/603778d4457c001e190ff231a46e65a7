@@ -1,0 +1,19 @@
+package com.jsp.jpql_crud_operation.controller;
+
+import com.jsp.jpql_crud_operation.dto.Product;
+import com.jsp.jpql_crud_operation.service.ProductService;
+
+public class InsertProductController {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Product product = new Product(102, "Ac", "white", 1800);
+		
+		ProductService service = new ProductService();
+		
+		service.saveProductService(product);
+
+	}
+
+}

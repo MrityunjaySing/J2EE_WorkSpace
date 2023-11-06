@@ -1,0 +1,29 @@
+package com.jsp.servlet.student.dto;
+
+import java.time.LocalDate;
+
+public class Employee {
+
+	private int Id;
+	private String Name;
+	private String Email;
+	private LocalDate DOB;
+	private int age;
+	private String salary;
+	private String Status;
+	public Employee(int id, String name, String email, LocalDate dOB, int age, String salary, String status) {
+		super();
+		this.Id = id;
+		this.Name = name;
+		this.Email = email;
+		this.DOB = dOB;
+		this.age = age;
+		this.salary = salary;
+		this.Status = status;
+	}
+	
+	
+	
+	
+	
+}

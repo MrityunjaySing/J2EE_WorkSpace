@@ -1,0 +1,12 @@
+package hibernate.one_to_one.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+public class QuestionAnsweDao {
+
+	EntityManager entityManager = Persistence.createEntityManagerFactory("hibernate").createEntityManager();
+	
+	EntityTransaction  entityTransaction = entityManager.getTransaction();
+}

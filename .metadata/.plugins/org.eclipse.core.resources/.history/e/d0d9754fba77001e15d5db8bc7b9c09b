@@ -1,0 +1,48 @@
+package com.jpql_crud_operation.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
+
+import com.jpql_crud_operation.dto.Product;
+
+
+
+public class ProductDao {
+	EntityManager entityManager = Persistence.createEntityManagerFactory("jpql").createEntityManager();
+	EntityTransaction  entityTransaction = entityManager.getTransaction();
+
+	public Product saveProductDao(Product products) {
+	
+
+	String insertQuery = "insert into products(id,name,price,color) values(?,?,?,?)";
+	
+  Query	query = entityManager.createNativeQuery(insertQuery);
+  
+	query.setParameter(1, products.getId());
+	query.setParameter(2, products.getName());
+	query.setParameter(3, products.getPrice());
+	query.setParameter(4, products.getColor());
+	
+	entityTransaction.begin();
+	int a = query.executeUpdate();
+	entityTransaction.commit();
+	System.out.println(a);
+	return products;
+}
+
+public Product getProductByIdDao(int productId) {
+	
+	String selectQuery= "SELECT p FORM Product p WHERE p.id=:?1";
+	Query query = entityManager.createQuery(selectQuery);
+	query.setParameter(1,productId);
+	Object object = query.getSingleResult();
+	return (Product)object;
+}
+//public void deleteProductIdDao(int id) {
+//	String deleteQuery = "DELETE  FORM Product p WHERE p.id=?123 "
+//			
+//}
+
+}

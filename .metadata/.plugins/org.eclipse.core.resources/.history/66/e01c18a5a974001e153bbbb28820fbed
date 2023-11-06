@@ -1,0 +1,28 @@
+package hibernate.one_to_one.dto;
+
+import java.util.*;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Question {
+ @Id
+ @Column(name="question_id")
+	 private int question_Id;
+	   private String Question; 
+	 @OneToOne
+private	 Answer answer;
+}

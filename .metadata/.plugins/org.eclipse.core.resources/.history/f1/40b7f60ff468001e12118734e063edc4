@@ -1,0 +1,38 @@
+package com.jsp.servlet.student.dto;
+
+public class Employee {
+
+	private int empId;
+	private String empName;
+	private String empAddress;
+	
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Employee(int empId, String empName, String empAddress) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.empAddress = empAddress;
+	}
+	public int getStuId() {
+		return empId;
+	}
+	public void setStuId(int stuId) {
+		this.empId = stuId;
+	}
+	public String getStuName() {
+		return empName;
+	}
+	public void setStuName(String stuName) {
+		this.empName = stuName;
+	}
+	public String getStuAddress() {
+		return empAddress;
+	}
+	public void setStuAddress(String stuAddress) {
+		this.empAddress = stuAddress;
+	}
+	
+}

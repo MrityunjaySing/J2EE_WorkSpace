@@ -1,0 +1,26 @@
+package hibernate.one_to_one.dto;
+
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Answer {
+	public Answer(int i, String string,List<Question> questions) {
+		// TODO Auto-generated constructor stub
+	}
+	@Id
+	@Column(name="answer_id")
+	private int id;
+	 private int answer_Id;
+	   private String answer; 
+	  }

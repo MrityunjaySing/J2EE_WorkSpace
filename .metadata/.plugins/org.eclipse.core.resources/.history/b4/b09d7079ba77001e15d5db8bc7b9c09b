@@ -1,0 +1,13 @@
+package com.jpql_crud_operation.controller;
+import com.jpql_crud_operation.dto.Product;
+import com.jpql_crud_operation.service.ProductService;
+
+
+public class ProductInsertController {
+public static void main(String[] args) {
+	
+	Product products = new Product(101, "orange", 100, "yellow" );
+	ProductService service = new ProductService();
+	service.saveProductService(products);
+}
+}

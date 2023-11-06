@@ -1,0 +1,26 @@
+package com.jpql_crud_operation.dao;
+
+
+
+import java.sql.PreparedStatement;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import com.jpql_crud_operation.dto.Product;
+
+
+public class ProductDao {public Product saveProductDao(Product product) {
+
+	String productRegisterQuery = "insert into products(id,name,price,color) values(?,?,?,?)";
+
+	try {
+
+		
+
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+	return null;
+}

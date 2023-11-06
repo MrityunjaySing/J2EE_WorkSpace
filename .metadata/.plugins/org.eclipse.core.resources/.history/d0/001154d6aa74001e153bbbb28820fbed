@@ -1,0 +1,11 @@
+package hibernate.one_to_one.controller;
+import hibernate.one_to_one.dto.Question;
+
+import hibernate.one_to_one.dto.*;
+public class MapDemo {
+public static void main(String[] args) {
+	Question question = new Question(1423,"what is java");
+	Question question1 = new Question(1424,"what is collection");
+	
+}
+}

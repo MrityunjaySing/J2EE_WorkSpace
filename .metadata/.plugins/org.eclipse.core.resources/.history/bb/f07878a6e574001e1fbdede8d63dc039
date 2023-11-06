@@ -1,0 +1,22 @@
+package hibernate.one_to_one.controller;
+import hibernate.one_to_one.dto.Question;
+import hibernate.one_to_one.service.QuestionAnswerService;
+import hibernate.one_to_one.dto.Answer;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+
+
+import hibernate.one_to_one.dto.*;
+public class MapDemo {
+public static void main(String[] args) {
+	Question question = new Question(1423,"what is java");
+	Question question1 = new Question(1424,"what is collection");
+	List<Question> subjects = new ArrayList<Question>(Arrays.asList(question,question1));
+	
+	Answer answer = new Answer(1111,"java is programming knowlage");
+	Question answer1 = new Question(1112,"collection is java part");
+	new saveq(new ArrayList<Answer>(Arrays.asList(answer,answer1))); 
+}
+}

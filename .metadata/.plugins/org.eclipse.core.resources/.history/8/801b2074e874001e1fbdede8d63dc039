@@ -1,0 +1,26 @@
+package hibernate.one_to_one.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import hibernate.one_to_one.dto.Answer;
+
+public class QuestionAnsweDao {
+
+	EntityManager entityManager = Persistence.createEntityManagerFactory("hibernate").createEntityManager();
+	
+	EntityTransaction  entityTransaction = entityManager.getTransaction();
+public List<Answer> savequestionanswerDao(List<Answer> answers){
+		
+		entityTransaction.begin();
+		for (Answer answer : answers) {
+			entityManager.persist(answers);
+		}
+		entityTransaction.commit();
+		
+		return answers;
+	}
+}
